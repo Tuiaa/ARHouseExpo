@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using Vuforia;
 
+/*
+ *  Vuforia scripts, tried to make the 3D model to stay in place
+ */
 [RequireComponent(typeof(VuforiaBehaviour))]
 public class SmoothCamera : MonoBehaviour
 {

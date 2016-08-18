@@ -2,6 +2,9 @@
 using System.Collections;
 using System;
 
+/*
+ *  Vuforia scripts, tried to make the 3D model to stay in place
+ */
 public class Math3d : MonoBehaviour
 {
 
