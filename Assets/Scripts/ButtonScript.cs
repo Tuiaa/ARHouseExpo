@@ -10,12 +10,14 @@ public class ButtonScript : MonoBehaviour {
 
     public List<GameObject> buildings = new List<GameObject>();
     public int lengthOfList;
+    ChangeTextScript changeText;
 
     // Check how many building there are on the scene
     void Start()
     {
         lengthOfList = buildings.Count;
         Debug.Log("lengthoflist: " + lengthOfList);
+        changeText = GetComponent<ChangeTextScript>();
     }
 
     // Finds the previous house on the list
@@ -41,6 +43,7 @@ public class ButtonScript : MonoBehaviour {
 
                 // Set the previous active building not active
                 building.SetActive(false);
+               // changeText.changeHouseText(building.GetComponent<HouseID>().houseText);
                 Debug.Log("building setactive false");
                 // Find the new building and set it to active
                 foreach (GameObject buildingID in buildings)
@@ -73,6 +76,7 @@ public class ButtonScript : MonoBehaviour {
                     houseID = 0;
 
                 building.SetActive(false);
+               // changeText.changeHouseText(building.GetComponent<HouseID>().houseText);
 
                 foreach (GameObject buildingID in buildings)
                 {
